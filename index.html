@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #container{
+            border: 1px solid black;
+            padding: 50px;
+        }
+        .liAnswer:hover{
+            background-color: yellow;
+        }
+        .answer{
+            border: 5px solid black;
+            margin-top: 15px;
+            padding: 50px;
+        }
+    </style>
+    <title>wheel of fortune</title>
+</head>
+<body>
+    <h1>wheel of fortune</h1>
+    <ol>
+        <p>rules to play...</p>
+        <li>read question &amp; answer by clicking one of the options</li>
+        <li>once you find out the right answer, press the button to move to next question</li>
+        <li>repeat till the games finished. Good luck.</li>
+    </ol>
+    <div id="container">
+        <!-- append quesion through js -->
+        <h1 id="questionText"></h1>
+        <!-- append choices via js -->
+        <ol id="choices"></ol>
+        <!-- runs function -->
+        <button id="check">next question</button>
+        <br>
+        <div class="answer">
+            <!-- right or wrong answer appended here via js -->
+            <p id="correctAnswer"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.tlm.cloud/jquery/3.3.1/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

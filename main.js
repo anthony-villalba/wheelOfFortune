@@ -1,4 +1,4 @@
-$(document).on(() => {
+$(document).ready(() => {
     //references
     const question = document.getElementById('questionText')
     const choices = document.getElementById('choices')
